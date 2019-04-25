@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home container-fluid" style="padding: 0;">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
                 <router-link to="/applicant"><img src="../assets/logo.svg" width="100px" height="40px" style="padding-bottom: 10px;"></router-link>
@@ -8,7 +8,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                   <ul class="navbar-nav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <router-link class="nav-link" to="/accepted">Aceptados</router-link>
                     </li>
@@ -24,6 +24,7 @@
                 </ul>
             </div>
         </nav>
+
         <div class="container">
             <table class="table">
                 <thead>
@@ -32,7 +33,7 @@
                         <th scope="col">Apellido</th>
                         <th scope="col">Dirección</th>
                         <th scope="col">Perfíl</th>
-                        <th scope="col">Desactivar</th>
+                        <th scope="col">Aceptar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,7 +48,7 @@
                         </td>
                         <td>
                             <button type="button" class="btn btn-primary profile">
-                                <router-link class="profile-link" to="">Desactivar Empleado</router-link>
+                                <router-link class="profile-link" to="/profile">Aceptar</router-link>
                             </button>
                         </td>
                     </tr>
@@ -64,7 +65,7 @@
                         </td>
                         <td>
                             <button type="button" class="btn btn-primary profile">
-                                <router-link class="profile-link" to="">Desactivar Empleado</router-link>
+                                <router-link class="profile-link" to="/profile">Aceptar</router-link>
                             </button>
                         </td>
                     </tr>
@@ -74,15 +75,18 @@
     </div>
 </template>
 
-<script>
-    export default {
-        data() {
-            return {
 
-            }
-        },
-    }
+
+<script>
+  export default {
+    data() {
+      return {
+        key: value
+      }
+    },
+  }
 </script>
+
 
 <style scoped>
     .profile {

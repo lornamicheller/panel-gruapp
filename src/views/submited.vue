@@ -2,7 +2,7 @@
     <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
-                <router-link to="/"><img src="../assets/logo.svg" width="100px" height="40px" style="padding-bottom: 10px;"></router-link>
+                <router-link to="/applicant"><img src="../assets/logo.svg" width="100px" height="40px" style="padding-bottom: 10px;"></router-link>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -13,13 +13,13 @@
                         <router-link class="nav-link nav-link-2" to="/accepted">Aceptados</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/">Solicitantes</router-link>
+                        <router-link class="nav-link" to="/applicant">Solicitantes</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/submited">Historial de Servicios</router-link>
                     </li>
                     <li class="nav-item log-out">
-                        <router-link class="nav-link" to="" tabindex="-1" aria-disabled="true">Logout</router-link>
+                        <router-link class="nav-link" to="/" tabindex="-1" aria-disabled="true">Logout</router-link>
                     </li>
                 </ul>
             </div>

@@ -44,6 +44,11 @@ export default new Router({
       path: '/finished',
       name: 'finished',
       component: () => import(/* webpackChunkName: "about" */ './views/finished.vue')
+    },
+    {
+      path: '/applicant',
+      name: 'applicant',
+      component: () => import(/* webpackChunkName: "about" */ './views/applicant.vue')
     }
   ]
 })

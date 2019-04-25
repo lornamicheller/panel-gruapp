@@ -1,76 +1,23 @@
 <template>
-    <div class="home container-fluid" style="padding: 0;">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <router-link to="/"><img src="../assets/logo.svg" width="100px" height="40px" style="padding-bottom: 10px;"></router-link>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <router-link class="nav-link" to="/accepted">Aceptados</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link" to="/">Solicitantes</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link" to="/submited">Historial de Servicios</router-link>
-                    </li>
-                    <li class="nav-item log-out">
-                        <router-link class="nav-link disabled" to="" tabindex="-1" aria-disabled="true">Logout</router-link>
-                    </li>
-                </ul>
+    <div>
+        <div class="container-fluid bg-login">
+            <div class="container" style="padding-top: 200px;">
+                <div class="row justify-content-center">
+                    <div class="card col-lg-6 col-md-10 col-sm-6 col-xs-6">
+                        <form>
+                            <div class="form-group row">
+                                <i class="fas fa-envelope col-1" style="margin-top: 60px; margin-left: 10px;"></i>
+                                <input type="email" class="form-control col-10" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group row">
+                                <i class="fas fa-lock col-1" style="margin-top: 60px; margin-left: 10px;"></i>
+                                <input type="password" class="form-control col-10" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <router-link to="/applicant"><button type="submit" class="btn btn-primary submit-btn">Submit</button></router-link>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </nav>
-
-        <div class="container">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Apellido</th>
-                        <th scope="col">Dirección</th>
-                        <th scope="col">Perfíl</th>
-                        <th scope="col">Aceptar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Little</td>
-                        <td>Jane</td>
-                        <td>Hotel Sheraton, San Juan</td>
-                        <td>
-                            <button type="button" class="btn btn-primary profile">
-                                <router-link class="profile-link" to="/profile">Perfíl</router-link>
-                            </button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-primary profile">
-                                <router-link class="profile-link" to="/profile">Aceptar</router-link>
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>Little</td>
-                        <td>Jane</td>
-                        <td>Hotel Sheraton, San Juan</td>
-                        <td>
-                            <button type="button" class="btn btn-primary profile">
-                                <router-link class="profile-link" to="/profile">Perfíl</router-link>
-                            </button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-primary profile">
-                                <router-link class="profile-link" to="/profile">Aceptar</router-link>
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
     </div>
 </template>
@@ -88,22 +35,41 @@
 </script>
 
 <style scoped>
-    .profile {
-        background-color: #6561ab !important;
-        border: 1px solid #6561ab !important;
+    .bg-login {
+        background-image: url('../assets/truck.jpg');
+        height: 100vh;
+        background-size: cover;
     }
     
-    .profile-link {
-        color: white;
-        font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 1px;
-        padding: 15px;
+    .card {
+        border-radius: 25px;
+        -webkit-box-shadow: 0 8px 6px -6px black;
+	    -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
     }
     
-    .nav-link {
-        color: white !important;
-        font-weight: 700;
-        font-size: 12px;
+    #exampleInputEmail1 {
+        margin-top: 50px;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid rgb(184, 184, 184);
+    }
+    
+    #exampleInputPassword1 {
+        margin-top: 50px;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid rgb(184, 184, 184);
+    }
+    
+    .submit-btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #6561ab;
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 </style>
