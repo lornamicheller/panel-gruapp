@@ -1,5 +1,5 @@
 <template>
-    <div class="home container-fluid" style="padding: 0;">
+    <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
                 <router-link to="/"><img src="../assets/logo.svg" width="100px" height="40px" style="padding-bottom: 10px;"></router-link>
@@ -8,9 +8,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                   <ul class="navbar-nav">
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/accepted">Aceptados</router-link>
+                        <router-link class="nav-link" to="">Aceptados</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/">Solicitantes</router-link>
@@ -24,7 +24,6 @@
                 </ul>
             </div>
         </nav>
-
         <div class="container">
             <table class="table">
                 <thead>
@@ -33,7 +32,7 @@
                         <th scope="col">Apellido</th>
                         <th scope="col">Dirección</th>
                         <th scope="col">Perfíl</th>
-                        <th scope="col">Aceptar</th>
+                        <th scope="col">Desactivar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,7 +47,7 @@
                         </td>
                         <td>
                             <button type="button" class="btn btn-primary profile">
-                                <router-link class="profile-link" to="/profile">Aceptar</router-link>
+                                <router-link class="profile-link" to="">Desactivar Empleado</router-link>
                             </button>
                         </td>
                     </tr>
@@ -65,7 +64,7 @@
                         </td>
                         <td>
                             <button type="button" class="btn btn-primary profile">
-                                <router-link class="profile-link" to="/profile">Aceptar</router-link>
+                                <router-link class="profile-link" to="">Desactivar Empleado</router-link>
                             </button>
                         </td>
                     </tr>
@@ -76,14 +75,12 @@
 </template>
 
 <script>
-    // @ is an alias to /src
-    import HelloWorld from '@/components/HelloWorld.vue'
-
     export default {
-        name: 'home',
-        components: {
-            HelloWorld
-        }
+        data() {
+            return {
+
+            }
+        },
     }
 </script>
 
