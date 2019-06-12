@@ -31,7 +31,7 @@
                         <th scope="col">Nombre</th>
                         <th scope="col">Apellido</th>
                         <th scope="col">Dirección</th>
-                        <th scope="col">Perfíl</th>
+                        <th scope="col">Perfil</th>
                         <th scope="col">Desactivar</th>
                     </tr>
                 </thead>
@@ -42,7 +42,7 @@
                         <td>Hotel Sheraton, San Juan</td>
                         <td>
                             <button type="button" class="btn btn-primary profile">
-                                <router-link class="profile-link" to="/profile">Perfíl</router-link>
+                                <router-link class="profile-link" to="/profile">Perfil</router-link>
                             </button>
                         </td>
                         <td>
@@ -59,7 +59,7 @@
                         <td>Hotel Sheraton, San Juan</td>
                         <td>
                             <button type="button" class="btn btn-primary profile">
-                                <router-link class="profile-link" to="/profile">Perfíl</router-link>
+                                <router-link class="profile-link" to="/profile">Perfil</router-link>
                             </button>
                         </td>
                         <td>
